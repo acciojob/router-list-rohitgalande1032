@@ -5,7 +5,10 @@ const ItemDetail = ({items}) => {
     const {id} = useParams();
     const item = items.find(item => item.id === parseInt(id))
   return (
-    <div>{item.description}</div>
+    <div>
+        <h1>Item {item.id}</h1>
+        <p>{item.description}</p>
+    </div>
   )
 }
 
